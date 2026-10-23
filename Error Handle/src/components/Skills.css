@@ -1,0 +1,124 @@
+.skills-section {
+  padding-top: 97px;
+  padding-bottom: 104px;
+}
+
+.skills-heading > p {
+  max-width: 320px;
+  margin: 0 3% 4px 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 46px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.skill-group {
+  min-height: 218px;
+  padding: 23px 24px 26px;
+}
+
+.skill-group + .skill-group {
+  border-left: 1px solid var(--line);
+}
+
+.skill-group-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.skill-group-mark {
+  color: var(--green);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.skill-group h3 {
+  margin: 20px 0 5px;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: -0.4px;
+}
+
+.skill-group > p {
+  min-height: 35px;
+  margin: 0 0 17px;
+  color: var(--ink-soft);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.skill-tags span {
+  padding: 6px 8px;
+  background: var(--field);
+  font-size: 9px;
+}
+
+@media (max-width: 720px) {
+  .skills-section {
+    padding-top: 71px;
+    padding-bottom: 74px;
+  }
+
+  .skills-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .skills-heading h2 {
+    font-size: clamp(33px, 7vw, 44px);
+  }
+
+  .skills-heading > p {
+    max-width: 470px;
+  }
+
+  .skill-groups {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .skill-group {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .skill-group + .skill-group {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .skill-group h3 {
+    margin-top: 13px;
+  }
+
+  .skill-group > p {
+    min-height: auto;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .skills-heading h2 {
+    font-size: 33px;
+    letter-spacing: -1.5px;
+  }
+
+  .skills-heading h2 > span {
+    letter-spacing: -1.5px;
+  }
+}
